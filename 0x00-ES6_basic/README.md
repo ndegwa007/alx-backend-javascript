@@ -6,5 +6,5 @@
 
 <details>
 <summary><a href="./0-constants.js">0.Const or let?</a></summary>
-<a href='https://postimg.cc/TLBbRVG0' target='_blank'><img src='https://i.postimg.cc/TLBbRVG0/Screenshot-from-2023-07-24-12-47-11.png' border='0' alt='Screenshot-from-2023-07-24-12-47-11'/></a>
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/NFjkkDz3/Screenshot-from-2023-07-24-12-47-11.png' border='0' alt='Screenshot-from-2023-07-24-12-47-11'/></a>
 </details>
