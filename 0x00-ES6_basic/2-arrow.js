@@ -1,4 +1,3 @@
-#!/usr/bin/node
 /* arrow function */
 const sanFranciscoNeighborhoods = ['SOMA', 'Union Square'];
 

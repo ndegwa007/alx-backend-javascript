@@ -1,4 +1,3 @@
-#!/usr/bin/node
 /* const or let */
 
 export function taskFirst () {
