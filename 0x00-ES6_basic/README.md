@@ -22,7 +22,7 @@
 <details>
 <summary><a href="./3-default-parameter.js">3.Parameter defaults</a></summary>
 <a href='https://postimg.cc/642YkfXt' target='_blank'><img src='https://i.postimg.cc/642YkfXt/Screenshot-from-2023-07-24-17-14-10.png' border='0' alt='Screenshot-from-2023-07-24-17-14-10'/></a>
-</details>>
+</details>
 
 <details>
 <summary><a href="./4-rest-parameter.js">4.Rest parameter syntax for functions</a></summary>
