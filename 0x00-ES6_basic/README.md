@@ -13,3 +13,8 @@
 <summary><a href="./1-block-scoped.js">1.Block Scope</a></summary>
 <a href='https://postimg.cc/nMd0xx4d' target='_blank'><img src='https://i.postimg.cc/nMd0xx4d/Screenshot-from-2023-07-24-14-56-51.png' border='0' alt='Screenshot-from-2023-07-24-14-56-51'/></a>
 </details>
+
+<details>
+<summary><a href="./2.arrow.js">2.Arrow functions</a></summary>
+<a href='https://postimg.cc/kRJ1C56X' target='_blank'><img src='https://i.postimg.cc/kRJ1C56X/Screenshot-from-2023-07-24-16-13-13.png' border='0' alt='Screenshot-from-2023-07-24-16-13-13'/></a>
+</details>
