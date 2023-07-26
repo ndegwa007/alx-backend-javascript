@@ -45,21 +45,26 @@
 </details>
 
 <details>
-<summary><a href=""></a></summary>
+<summary><a href="./8-getBudgetCurrentYear.js">8.No need to create empty objects before adding in properties</a></summary>
+<a href='https://postimg.cc/SjWGF7Sb' target='_blank'><img src='https://i.postimg.cc/SjWGF7Sb/Screenshot-from-2023-07-26-08-36-21.png' border='0' alt='Screenshot-from-2023-07-26-08-36-21'/></a>
 </details>
 
 <details>
-<summary><a href=""></a></summary>
+<summary><a href="./9-getFullBudget.js">9.ES6 Method properties</a></summary>
+<a href='https://postimg.cc/ftzyk9ty' target='_blank'><img src='https://i.postimg.cc/ftzyk9ty/Screenshot-from-2023-07-26-08-42-58.png' border='0' alt='Screenshot-from-2023-07-26-08-42-58'/></a>
 </details>
 
 <details>
-<summary><a href=""></a></summary>
+<summary><a href="./10-loops.js">10.For..of Loops</a></summary>
+<a href='https://postimg.cc/HrnfWskm' target='_blank'><img src='https://i.postimg.cc/HrnfWskm/Screenshot-from-2023-07-26-08-44-08.png' border='0' alt='Screenshot-from-2023-07-26-08-44-08'/></a>
 </details>
 
 <details>
-<summary><a href=""></a></summary>
+<summary><a href="./11-createEmployeesObject.js">11.Iterator</a></summary>
+<a href='https://postimg.cc/YL4dKjxD' target='_blank'><img src='https://i.postimg.cc/YL4dKjxD/Screenshot-from-2023-07-26-08-46-38.png' border='0' alt='Screenshot-from-2023-07-26-08-46-38'/></a>
 </details>
 
 <details>
-<summary><a href=""></a></summary>
+<summary><a href="./12-createReportObject.js">12.Let's create a report object</a></summary>
+<a href='https://postimg.cc/KKDGB8BW' target='_blank'><img src='https://i.postimg.cc/KKDGB8BW/Screenshot-from-2023-07-26-08-48-43.png' border='0' alt='Screenshot-from-2023-07-26-08-48-43'/></a>
 </details>
