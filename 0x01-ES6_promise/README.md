@@ -29,37 +29,37 @@
 
 
 <details>
-<summary><a href"./4-user-promise">4.Simple promise</a></summary>
+<summary><a href="./4-user-promise">4.Simple promise</a></summary>
 <a href='https://postimg.cc/629WtHgj' target='_blank'><img src='https://i.postimg.cc/629WtHgj/Screenshot-from-2023-07-27-09-17-55.png' border='0' alt='Screenshot-from-2023-07-27-09-17-55'/></a>
 </details>
 
 
 <details>
-<summary><a href"./5-photo-reject.js">5.Reject the promise</a></summary>
+<summary><a href="./5-photo-reject.js">5.Reject the promise</a></summary>
 <a href='https://postimg.cc/SJHFtVhM' target='_blank'><img src='https://i.postimg.cc/SJHFtVhM/Screenshot-from-2023-07-27-09-21-22.png' border='0' alt='Screenshot-from-2023-07-27-09-21-22'/></a>
 </details>
 
 
 <details>
-<summary><a href"./6-final-user.js">6.Handle multiple promises</a></summary>
+<summary><a href="./6-final-user.js">6.Handle multiple promises</a></summary>
 <a href='https://postimg.cc/ph4QRD67' target='_blank'><img src='https://i.postimg.cc/ph4QRD67/Screenshot-from-2023-07-27-10-47-14.png' border='0' alt='Screenshot-from-2023-07-27-10-47-14'/></a>
 </details>
 
 
 <details>
-<summary><a href"./7-load_balancer.js">7.Load balancer</a></summary>
+<summary><a href="./7-load_balancer.js">7.Load balancer</a></summary>
 <a href='https://postimg.cc/68G14fR9' target='_blank'><img src='https://i.postimg.cc/68G14fR9/Screenshot-from-2023-07-27-10-48-42.png' border='0' alt='Screenshot-from-2023-07-27-10-48-42'/></a>
 </details>
 
 
 <details>
-<summary><a href"./8-try.js">8.Throw error</a></summary>
+<summary><a href="./8-try.js">8.Throw error</a></summary>
 <a href='https://postimg.cc/Cd821gyR' target='_blank'><img src='https://i.postimg.cc/Cd821gyR/Screenshot-from-2023-07-27-10-53-26.png' border='0' alt='Screenshot-from-2023-07-27-10-53-26'/></a>
 </details>
 
 
 <details>
-<summary><a href"./9-try.js">9.Throw an error</a></summary>
+<summary><a href="./9-try.js">9.Throw an error</a></summary>
 <a href='https://postimg.cc/Wd4LtH6x' target='_blank'><img src='https://i.postimg.cc/Wd4LtH6x/Screenshot-from-2023-07-27-10-54-21.png' border='0' alt='Screenshot-from-2023-07-27-10-54-21'/></a>
 </details>
 
