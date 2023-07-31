@@ -1,45 +1,56 @@
 export default class HolbertonCourse {
-  constructor (name, length, students) {
-    if (typeof length !== 'number') {
-      throw new TypeError('Length must be number');
-    }
-    if (!Array.isArray(students)) {
-      throw new TypeError('students must be array');
-    }
-    if (!students.every(student => typeof student === 'string')) {
-      throw new TypeError('every students entry must be a string');
-    }
-
-    this._name = name;
-    this.length = length;
-    this.students = students;
+  constructor(name, length, students) {
+    this._name = HolbertonCourse.validateString(name, 'Name');
+    this._length = HolbertonCourse.validateLength(length, 'Length');
+    this._students = HolbertonCourse.validateStudents(students);
   }
 
-  setName (value) {
-    if (typeof value !== 'string') {
-      throw new TypeError('Name must be string');
-    }
-    this.name = value;
-    this._name = this.name;
+  set name(newName) {
+    this._name = HolbertonCourse.validateString(newName, 'Name');
   }
 
-  getName () {
+  get name() {
     return this._name;
   }
 
-  setLength (value) {
-    this._length = value;
+  set length(newLength) {
+    this._length = HolbertonCourse.validateLength(newLength, 'Length');
   }
 
-  getLength () {
+  get length() {
     return this._length;
   }
 
-  setStudents (value) {
-    this._students = value;
+  set students(students) {
+    this._students = HolbertonCourse.validateStudents(students);
   }
 
-  getStudents () {
+  get students() {
     return this._students;
+  }
+
+  static validateString(value, attrname) {
+    if (typeof value !== 'string') {
+      throw new TypeError(`${attrname} must be a string`);
+    }
+    return value;
+  }
+
+  static validateLength(value, attrname) {
+    if (typeof value !== 'number') {
+      throw new TypeError(`${attrname} must be a number`);
+    }
+    return value;
+  }
+
+  static validateStudents(value) {
+    if (!Array.isArray(value)) {
+      throw new TypeError('students must be array');
+    }
+    if (!value.every((student) => typeof student === 'string')) {
+      throw new TypeError('every students entry must be a string');
+    }
+
+    return value;
   }
 }
