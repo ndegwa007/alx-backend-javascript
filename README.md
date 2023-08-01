@@ -14,3 +14,8 @@
 11. [Throw-Try](https://intranet.alxswe.com/rltoken/UTjDgvKk5l892Xslh0vqcQ)
 12. [classes](https://intranet.alxswe.com/rltoken/ke2dSL31JbpAUBW0qWE9WA)
 13. [metaprogramming](https://intranet.alxswe.com/rltoken/6OgF5QGbYclp_cwATfq-0g)
+14. [Array](https://intranet.alxswe.com/rltoken/bcXqK1IaIHtrZ45sv0RxsQ)
+15. [Typed Array](https://intranet.alxswe.com/rltoken/YZ5RtzAPTaWtF00MYbXuVw)
+16. [Set Data Structure](https://intranet.alxswe.com/rltoken/Ch8vq39y9QnlTMr8CymgEg)
+17. [Map Data Structure](https://intranet.alxswe.com/rltoken/W29MV3f8Ii4HmeJSALNIpw)
+18. [WeakMap](https://intranet.alxswe.com/rltoken/pSetFVFeIR660GPE0flPdg)
