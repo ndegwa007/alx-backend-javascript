@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 console.log('Welcome to Holberton School, what is your name?');
 
 rl.on('line', (name) => {
-  console.log(`Your name is ${name}`);
+  console.log(`Your name is: ${name}`);
 });
 
 rl.on('close', () => {
