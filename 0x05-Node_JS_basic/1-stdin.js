@@ -1,17 +1,19 @@
 #!/usr/bin/node
-const readline = require('readline');
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
+const process = require('process');
+
+process.stdin.setEncoding('utf8'); // Set encoding to utf8 to work with text data
+process.stdin.write('Welcome to Holberton School, what is your name?\n');
+
+process.stdin.on('end', () => {
+  // Handle the end of input (when the pipe is closed)
+  process.stdout.write('this important software is now closing');
 });
 
-console.log('Welcome to Holberton School, what is your name?');
-
-rl.on('line', (name) => {
-  console.log(`Your name is: ${name}`);
-});
-
-rl.on('close', () => {
-  console.log('This important software is now closing');
+process.stdin.on('readable', () => {
+  // Process the incoming data as it arrives
+  const name = process.stdin.read();
+  if (name !== null) {
+    process.stdout.write(`Your name is: ${name}`);
+  }
 });
