@@ -2,7 +2,7 @@
 
 const fs = require('fs/promises');
 
-async function countStudents (path) {
+async function countStudents(path) {
   // read file asyncronously
   const data = await fs.readFile(path, { encoding: 'utf-8' });
   if (data !== null) {
@@ -19,10 +19,18 @@ async function countStudents (path) {
         const field = row[3].trim();
         if (field === 'CS') {
           csStudents += 1;
-          listCS.push(row[0]);
+          if (listCS.length !== 0) {
+            listCS.push(` ${row[0]}`);
+          } else {
+            listCS.push(row[0]);
+          }
         } else if (field === 'SWE') {
           sweStudents += 1;
-          listSWE.push(row[0]);
+          if (listSWE.length !== 0) {
+            listSWE.push(` ${row[0]}`);
+          } else {
+            listSWE.push(row[0]);
+          }
         } else {
           console.log('No students found');
         }
