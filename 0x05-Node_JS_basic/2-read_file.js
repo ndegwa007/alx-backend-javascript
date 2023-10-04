@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-function countStudents (path) {
+function countStudents(path) {
   // try and catch
   let numberOfStudents = 0;
   try {
