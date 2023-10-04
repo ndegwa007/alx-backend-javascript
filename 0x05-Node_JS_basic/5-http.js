@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs/promises');
 
-async function countStudents(dataFile) {
+async function countStudents (dataFile) {
   try {
     // Read the data file and parse its content
     const data = await fs.readFile(dataFile, 'utf8');
@@ -21,7 +21,7 @@ async function countStudents(dataFile) {
         firstname: values[0],
         lastname: values[1],
         age: values[2],
-        field: values[fieldIndex],
+        field: values[fieldIndex]
       };
       students.push(student);
     }

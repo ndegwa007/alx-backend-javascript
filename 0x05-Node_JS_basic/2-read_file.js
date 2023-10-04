@@ -20,10 +20,10 @@ function countStudents (path) {
         const field = row[3].trim();
         if (field === 'CS') {
           csStudents += 1;
-          listCS.push(row[0]);
+          listCS.push(' ' + row[0]);
         } else if (field === 'SWE') {
           sweStudents += 1;
-          listSWE.push(row[0]);
+          listSWE.push(' ' + row[0]);
         } else {
           console.log('No students found');
         }
