@@ -1,10 +1,12 @@
 const http = require('http');
-const fs = require('fs/promises');
+const fs = require('fs');
+const { promisify } = require('util');
 
-async function countStudents (dataFile) {
+async function countStudents(dataFile) {
   try {
     // Read the data file and parse its content
-    const data = await fs.readFile(dataFile, 'utf8');
+    const readFileAsync = promisify(fs.readFile);
+    const data = await readFileAsync(dataFile, 'utf8');
     const lines = data.trim().split('\n');
 
     // Initialize an empty list to store student objects
@@ -21,7 +23,7 @@ async function countStudents (dataFile) {
         firstname: values[0],
         lastname: values[1],
         age: values[2],
-        field: values[fieldIndex]
+        field: values[fieldIndex],
       };
       students.push(student);
     }
@@ -53,10 +55,7 @@ const app = http.createServer((req, res) => {
       const csStudents = students.filter((student) => student.field === 'CS');
       const sweStudents = students.filter((student) => student.field === 'SWE');
 
-      const text = `This is the list of our students
-    Number of students: ${students.length}
-    Number of students in CS: ${csStudents.length}. List: ${csStudents.map((student) => student.firstname).join(', ')}
-    Number of students in SWE: ${sweStudents.length}. List: ${sweStudents.map((student) => student.firstname).join(', ')}`;
+      const text = `This is the list of our students\nNumber of students: ${students.length}\nNumber of students in CS: ${csStudents.length}. List: ${csStudents.map((student) => student.firstname).join(', ')}\nNumber of students in SWE: ${sweStudents.length}. List: ${sweStudents.map((student) => student.firstname).join(', ')}`;
 
       res.end(text);
     })();
