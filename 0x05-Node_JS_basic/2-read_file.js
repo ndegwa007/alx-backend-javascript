@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 
-function countStudents(path) {
+function countStudents (path) {
   // try and catch
   let numberOfStudents = 0;
   try {
@@ -40,8 +40,7 @@ function countStudents(path) {
     console.log(`Number of students in CS: ${csStudents}. List: ${listCS}`);
     console.log(`Number of students in SWE: ${sweStudents}. List: ${listSWE}`);
   } catch (error) {
-    // throw Error('Cannot load the database');
-    console.log(`Error: ${error.message}`);
+    throw new Error('Cannot load the database');
   }
 }
 
