@@ -1,10 +1,12 @@
 #!/usr/bin/node
 
-const fs = require('fs/promises');
+const fs = require('fs');
+const { promisify } = require('util');
 
 async function countStudents(path) {
   // read file asyncronously
-  const data = await fs.readFile(path, { encoding: 'utf-8' });
+  const readFileAsync = promisify(fs.readFile);
+  const data = await readFileAsync(path, { encoding: 'utf-8' });
   if (data !== null) {
     const lines = data.split('\n');
     const numberOfStudents = lines.length - 2;
