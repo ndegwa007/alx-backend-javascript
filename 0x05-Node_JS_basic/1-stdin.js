@@ -1,19 +1,33 @@
 #!/usr/bin/node
 
-const process = require('process');
+const readline = require('readline');
 
-process.stdin.setEncoding('utf8'); // Set encoding to utf8 to work with text data
-process.stdin.write('Welcome to Holberton School, what is your name?\n');
-
-process.stdin.on('end', () => {
-  // Handle the end of input (when the pipe is closed)
-  process.stdout.write('this important software is now closing');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
 });
 
-process.stdin.on('readable', () => {
-  // Process the incoming data as it arrives
-  const name = process.stdin.read();
-  if (name !== null) {
-    process.stdout.write(`Your name is: ${name}`);
-  }
-});
+if (process.stdin.isTTY) {
+  // Running interactively with 'node [filename]'
+  console.log('Welcome to Holberton School, what is your name?');
+
+  rl.on('line', (name) => {
+    console.log(`Your name is: ${name}`);
+    rl.close();
+  });
+} else {
+  // Piped input
+  console.log('Welcome to Holberton School, what is your name?');
+
+  const chunks = [];
+
+  process.stdin.on('data', (chunk) => {
+    chunks.push(chunk);
+  });
+
+  process.stdin.on('end', () => {
+    const input = chunks.join('');
+    process.stdout.write(`Your name is: ${input}`);
+    process.stdout.write('This important software is now closing\n');
+  });
+}
