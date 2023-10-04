@@ -50,14 +50,18 @@ const app = http.createServer((req, res) => {
     res.end();
   } else if (url === '/students') {
     (async () => {
-      const students = await countStudents('database.csv');
+      try {
+        const db = process.argv[2];
+        const students = await countStudents(db);
+        const csStudents = students.filter((student) => student.field === 'CS');
+        const sweStudents = students.filter((student) => student.field === 'SWE');
 
-      const csStudents = students.filter((student) => student.field === 'CS');
-      const sweStudents = students.filter((student) => student.field === 'SWE');
+        const text = `This is the list of our students\nNumber of students: ${students.length}\nNumber of students in CS: ${csStudents.length}. List: ${csStudents.map((student) => student.firstname).join(', ')}\nNumber of students in SWE: ${sweStudents.length}. List: ${sweStudents.map((student) => student.firstname).join(', ')}`;
 
-      const text = `This is the list of our students\nNumber of students: ${students.length}\nNumber of students in CS: ${csStudents.length}. List: ${csStudents.map((student) => student.firstname).join(', ')}\nNumber of students in SWE: ${sweStudents.length}. List: ${sweStudents.map((student) => student.firstname).join(', ')}`;
-
-      res.end(text);
+        res.end(text);
+      } catch (error) {
+        res.end('Cannot load the database');
+      }
     })();
   }
 });
