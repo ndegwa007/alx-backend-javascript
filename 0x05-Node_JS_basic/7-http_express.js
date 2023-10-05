@@ -39,7 +39,7 @@ app.get('/students', async (req, res) => {
   res.setHeader('Content-Type', 'text/plain');
   const database = process.argv[2];
   if (!database) {
-    res.send('This is the list of our students\nCannot load the database');
+    res.send('This is the list of our students Cannot load the database');
   } else {
     const studentdata = await countStudents(database);
     const studentsCS = studentdata.filter((student) => student.field === 'CS');
