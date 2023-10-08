@@ -6,7 +6,7 @@ const express = require('express');
 const app = express();
 const port = 1245;
 
-async function countStudents(dbFile) {
+async function countStudents (dbFile) {
   const students = [];
 
   // readfile
@@ -22,7 +22,7 @@ async function countStudents(dbFile) {
         first_name: row[0],
         last_name: row[1],
         age: row[2],
-        field: row[3],
+        field: row[3]
       };
       // push data to a list
       students.push(student);
