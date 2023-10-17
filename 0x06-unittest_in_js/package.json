@@ -1,0 +1,17 @@
+{
+  "name": "unittests",
+  "version": "1.0.0",
+  "description": "tests suite",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha *.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "chai-spies": "^1.0.0",
+    "mocha": "^10.2.0",
+    "sinon": "^16.1.0"
+  }
+}
