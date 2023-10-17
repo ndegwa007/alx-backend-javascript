@@ -5,9 +5,9 @@ const assert = require('node:assert');
 
 describe('test suite', function () {
   it('test sum function based on type', function () {
-    assert.equal(calculate('SUM', 1.4, 4.5), 6, 'test passed');
-    assert.equal(calculate('SUBTRACT', 1.4, 4.5), -4, 'test passed');
-    assert.equal(calculate('DIVIDE', 1.4, 4.5), 0.2, 'test passed');
-    assert.equal(calculate('DIVIDE', 1.4, 0), 'Error', 'test passed');
+    assert(calculate('SUM', 1.4, 4.5), 6);
+    assert(calculate('SUBTRACT', 1.4, 4.5), -4);
+    assert(calculate('DIVIDE', 1.4, 4.5), 0.2);
+    assert(calculate('DIVIDE', 1.4, 0), 'Error');
   });
 });
