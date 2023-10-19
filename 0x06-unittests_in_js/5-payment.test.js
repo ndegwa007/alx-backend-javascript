@@ -12,6 +12,7 @@ describe('test sendPayments', () => {
   });
 
   afterEach(() => {
+    // Restore the spy to its original state before running the next test.
     chai.spy.restore(consoleLogSpy);
   });
 
