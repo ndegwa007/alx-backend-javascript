@@ -5,7 +5,7 @@ describe('payment_token_async', () => {
   it('test async function success', function (done) {
     getPaymentTokenFromApi(true)
       .then(res => {
-        assert.equal(res, { data: 'Successful response from the API' });
+        assert.deepEqual(res, { data: 'Successful response from the API' });
       });
     done();
   });
