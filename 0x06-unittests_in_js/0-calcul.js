@@ -1,7 +1,7 @@
 function calculateNumber (a, b) {
-  a = Math.round(a);
-  b = Math.round(b);
-  return a + b;
+  A = Math.round(a);
+  B = Math.round(b);
+  return A + B;
 }
 
 module.exports = calculateNumber;
